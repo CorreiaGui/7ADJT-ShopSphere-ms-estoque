@@ -6,7 +6,7 @@ Microserviço responsável pelo gerenciamento de estoque no ecossistema ShopSphe
 
 ## 📝 Visão Geral
 
-Este microserviço fornece API RESTful para gestão de estoque de produtos — cadastro, consulta, atualização de quantidade e exclusão — e se integra ao ShopSphere via HTTP (ex.: API Gateway) e banco Postgres.
+Este microserviço fornece API RESTful para gestão de estoque de produtos — cadastro, consulta, atualização de quantidade e exclusão — e se integra ao ShopSphere via HTTP e banco Postgres.
 
 ---
 
