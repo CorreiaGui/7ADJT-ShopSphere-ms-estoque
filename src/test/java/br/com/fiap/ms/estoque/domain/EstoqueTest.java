@@ -62,27 +62,4 @@ public class EstoqueTest {
         assertEquals(dataUltimaAlteracao, estoque.getDataUltimaAlteracao());
     }
 
-    @Test
-    void deveConstruirEstoqueComBuilder() {
-        UUID id = UUID.randomUUID();
-        String sku = "SKU999";
-        Long quantidade = 75L;
-        LocalDateTime dataCriacao = LocalDateTime.now().minusDays(2);
-        LocalDateTime dataUltimaAlteracao = LocalDateTime.now();
-
-        Estoque estoque = Estoque.builder()
-                .id(id)
-                .sku(sku)
-                .quantidade(quantidade)
-                .dataCriacao(dataCriacao)
-                .dataUltimaAlteracao(dataUltimaAlteracao)
-                .build();
-
-        assertEquals(id, estoque.getId());
-        assertEquals(sku, estoque.getSku());
-        assertEquals(quantidade, estoque.getQuantidade());
-        assertEquals(dataCriacao, estoque.getDataCriacao());
-        assertEquals(dataUltimaAlteracao, estoque.getDataUltimaAlteracao());
-    }
-
 }

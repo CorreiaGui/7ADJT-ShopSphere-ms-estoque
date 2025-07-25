@@ -9,7 +9,6 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Estoque {
     private UUID id;
     private String sku;

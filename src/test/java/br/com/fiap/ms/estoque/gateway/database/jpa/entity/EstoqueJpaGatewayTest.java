@@ -1,8 +1,7 @@
-package br.com.fiap.ms.estoque.gateway.repository;
+package br.com.fiap.ms.estoque.gateway.database.jpa.entity;
 
 import br.com.fiap.ms.estoque.domain.Estoque;
 import br.com.fiap.ms.estoque.gateway.database.jpa.EstoqueJpaGateway;
-import br.com.fiap.ms.estoque.gateway.database.jpa.entity.EstoqueEntity;
 import br.com.fiap.ms.estoque.gateway.database.jpa.repository.EstoqueRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

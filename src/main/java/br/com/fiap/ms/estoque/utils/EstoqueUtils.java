@@ -14,13 +14,12 @@ public class EstoqueUtils {
     private EstoqueUtils() {}
 
     public static Estoque convertToEstoque(EstoqueEntity estoque){
-        return Estoque.builder()
-                .id(estoque.getId())
-                .sku(estoque.getSku())
-                .quantidade(estoque.getQuantidade())
-                .dataCriacao(estoque.getDataCriacao())
-                .dataUltimaAlteracao(estoque.getDataUltimaAlteracao())
-                .build();
+        return new Estoque(
+                estoque.getId(),
+                estoque.getSku(),
+                estoque.getQuantidade(),
+                estoque.getDataCriacao(),
+                estoque.getDataUltimaAlteracao());
     }
 
     public static EstoqueJson convertToEstoqueJson(Estoque estoque){
